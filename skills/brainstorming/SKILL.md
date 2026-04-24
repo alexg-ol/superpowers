@@ -130,9 +130,13 @@ After the spec review loop passes, ask the user to review the written spec befor
 
 Wait for the user's response. If they request changes, make them and re-run the spec review loop. Only proceed once the user approves.
 
+**Clear context before implementation:**
+- Tell the user: "Design complete. I recommend running `/clear` before we move to implementation planning — the brainstorming exploration has consumed significant context that's no longer needed. The design doc captures everything."
+- The design doc is the handoff artifact — writing-plans reads it, so no context is lost.
+
 **Implementation:**
 
-- Invoke the writing-plans skill to create a detailed implementation plan
+- After context is cleared, invoke the writing-plans skill to create a detailed implementation plan
 - Do NOT invoke any other skill. writing-plans is the next step.
 
 ## Key Principles
